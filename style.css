@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Base */
+body {
+    background: radial-gradient(circle at top, #291efd, #090a0f);
+    color: #eaeaea;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #232526, #5506d2);
+    padding: 290px 500px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+header p {
+    opacity: 0.85;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: #b8c6ff;
+    text-decoration: none;
+    padding: 16px 24px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #00f2fe;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00f2fe;
+}
+
+/* Profile */
+.profile-text {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+/* Education */
+.education {
+    margin-top: 50px;
+}
+
+.education h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b8c6ff;
+}
+
+.edu-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 22px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.edu-card h4 {
+    color: #00f2fe;
+    margin-bottom: 6px;
+}
+
+.edu-card p {
+    opacity: 0.9;
+}
+
+.edu-card span {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+/* Skills */
+#skills {
+    background: linear-gradient(135deg, #0f2027, #203a43);
+    border-radius: 30px;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.bar {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 18px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+/* Skill Levels */
+.html { width: 50%; }
+.css { width: 50%; }
+.c { width: 80%; }
+.python { width: 75%; }
+.linux { width: 85%; }
+.networking { width: 70%; }
+.sysadmin { width: 65%; }
+
+/* Contact */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card span {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(118,75,162,0.7);
+}
+
+/* Footer */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+}
